@@ -235,9 +235,7 @@ const constructLayerToDna = (_dna = "", _layers = []) => {
 };
 
 /**
- * In some cases a DNA string may contain optional query parameters for options
- * such as bypassing the DNA isUnique check, this function filters out those
- * items without modifying the stored DNA.
+ 
  *
  * @param {String} _dna New DNA string
  * @returns new DNA string with any items that should be filtered, removed.
@@ -262,9 +260,7 @@ const filterDNAOptions = (_dna) => {
 };
 
 /**
- * Cleaning function for DNA strings. When DNA strings include an option, it
- * is added to the filename with a ?setting=value query string. It needs to be
- * removed to properly access the file name before Drawing.
+
  *
  * @param {String} _dna The entire newDNA string
  * @returns Cleaned DNA string without querystring parameters.
